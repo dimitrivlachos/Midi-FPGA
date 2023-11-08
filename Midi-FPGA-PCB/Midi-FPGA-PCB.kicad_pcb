@@ -238,4 +238,17 @@
   (gr_arc (start 97 145) (mid 95.585786 144.414214) (end 95 143)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f5ac9066-daa3-4168-8e0f-4f50655edd96))
 
+  (zone (net 1) (net_name "GND") (layer "In1.Cu") (tstamp 89a3e7fb-644b-4fc8-9838-72db70176bd5) (name "Ground plane") (hatch edge 0.5)
+    (connect_pads (clearance 0.5))
+    (min_thickness 0.25) (filled_areas_thickness no)
+    (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
+    (polygon
+      (pts
+        (xy 80 60)
+        (xy 150 60)
+        (xy 150 150)
+        (xy 80 150)
+      )
+    )
+  )
 )
