@@ -83,6 +83,12 @@
   )
 
 
+  (rectangle (start 20.32 16.51) (end 72.39 45.72)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid 1a4ffaf4-ee00-4185-a54b-8bee0e9263d0)
+  )
+
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 50.8 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1724848d-ddd2-4d05-ae75-1ec60cf5fe2e)
