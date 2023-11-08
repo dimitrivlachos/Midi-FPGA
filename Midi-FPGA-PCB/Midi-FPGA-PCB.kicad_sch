@@ -280,6 +280,10 @@
     (stroke (width 0) (type default))
     (uuid 7bc4c21f-9e81-48b7-a7e7-dbf7ae3b7105)
   )
+  (wire (pts (xy 139.7 133.35) (xy 139.7 134.62))
+    (stroke (width 0) (type default))
+    (uuid 8a1a0d97-9493-48d4-bbfd-6b0eabc3c453)
+  )
   (wire (pts (xy 20.32 38.1) (xy 20.32 36.83))
     (stroke (width 0) (type default))
     (uuid d3169c33-0a2f-4bb3-8836-a267f9166928)
@@ -555,6 +559,31 @@
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
           (reference "#PWR03") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 139.7 134.62 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fc6fbfe2-278f-4d4f-95d4-b98037882787)
+    (property "Reference" "#PWR05" (at 139.7 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 139.7 139.7 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 139.7 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 139.7 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 734d47f3-e23a-4795-a5cd-82231c20d0cf))
+    (instances
+      (project "Midi-FPGA-PCB"
+        (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
+          (reference "#PWR05") (unit 1)
         )
       )
     )
