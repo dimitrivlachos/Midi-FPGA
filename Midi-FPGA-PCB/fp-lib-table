@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Midi-FPGA-lib")(type "KiCad")(uri "${KIPRJMOD}/Midi-FPGA-lib.pretty")(options "")(descr ""))
+)
