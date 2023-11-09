@@ -1129,7 +1129,7 @@
     (property "Reference" "SW1" (at 60.96 173.99 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SW_Push" (at 60.96 176.53 0)
+    (property "Value" "Reset" (at 60.96 176.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 60.96 176.53 0)
