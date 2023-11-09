@@ -854,9 +854,6 @@
   (junction (at 119.38 44.45) (diameter 0) (color 0 0 0 0)
     (uuid 65f31f85-16df-4fb8-8c6f-5ce905a2a684)
   )
-  (junction (at 149.86 173.99) (diameter 0) (color 0 0 0 0)
-    (uuid 95a28393-9c0e-428e-8615-032178814001)
-  )
   (junction (at 128.27 173.99) (diameter 0) (color 0 0 0 0)
     (uuid a2df6abe-0910-48b7-84e1-88a44b1c9445)
   )
@@ -868,6 +865,9 @@
   )
   (junction (at 20.32 181.61) (diameter 0) (color 0 0 0 0)
     (uuid cd70ae5b-d075-4687-8b24-9fd9d39e1ac1)
+  )
+  (junction (at 152.4 173.99) (diameter 0) (color 0 0 0 0)
+    (uuid ec2026a3-8786-43a3-b639-8d1694a069d8)
   )
 
   (wire (pts (xy 118.11 173.99) (xy 128.27 173.99))
@@ -890,7 +890,7 @@
     (stroke (width 0) (type default))
     (uuid 113ba51a-ebfe-4744-af85-e4b67c8d0e77)
   )
-  (wire (pts (xy 149.86 173.99) (xy 149.86 176.53))
+  (wire (pts (xy 152.4 173.99) (xy 152.4 176.53))
     (stroke (width 0) (type default))
     (uuid 1695eed5-1a3e-42ec-8701-37f8fb017320)
   )
@@ -942,9 +942,17 @@
     (stroke (width 0) (type default))
     (uuid 4327936e-ea2c-473f-8778-118db6fdff4d)
   )
+  (wire (pts (xy 148.59 173.99) (xy 152.4 173.99))
+    (stroke (width 0) (type default))
+    (uuid 4399bfb3-7da6-4089-b1ba-9d04b72f4310)
+  )
   (wire (pts (xy 119.38 53.34) (xy 119.38 54.61))
     (stroke (width 0) (type default))
     (uuid 51242e50-ff6b-454d-b2b1-ad774ce7aac2)
+  )
+  (wire (pts (xy 152.4 173.99) (xy 156.21 173.99))
+    (stroke (width 0) (type default))
+    (uuid 641c99b4-996c-4286-bbc7-f98a2f156c0d)
   )
   (wire (pts (xy 80.01 190.5) (xy 80.01 191.77))
     (stroke (width 0) (type default))
@@ -986,7 +994,7 @@
     (stroke (width 0) (type default))
     (uuid 8d42fcf3-610c-4155-bbdb-c8c0976460b8)
   )
-  (wire (pts (xy 162.56 173.99) (xy 165.1 173.99))
+  (wire (pts (xy 166.37 173.99) (xy 168.91 173.99))
     (stroke (width 0) (type default))
     (uuid 9d9f6407-5e20-4d55-a336-80512a61f605)
   )
@@ -998,29 +1006,21 @@
     (stroke (width 0) (type default))
     (uuid a776a0fd-b142-4de5-a195-d83c7be07d90)
   )
-  (wire (pts (xy 139.7 181.61) (xy 139.7 184.15))
+  (wire (pts (xy 140.97 181.61) (xy 140.97 184.15))
     (stroke (width 0) (type default))
     (uuid a7a8f98b-d1f9-4593-b86f-cfd8277a7d03)
-  )
-  (wire (pts (xy 149.86 173.99) (xy 152.4 173.99))
-    (stroke (width 0) (type default))
-    (uuid a94b3be7-74ec-44d4-a205-0559f02586ee)
   )
   (wire (pts (xy 33.02 181.61) (xy 35.56 181.61))
     (stroke (width 0) (type default))
     (uuid ac623cdf-55f9-449d-8bbc-d733e0ea15a5)
   )
-  (wire (pts (xy 128.27 173.99) (xy 132.08 173.99))
+  (wire (pts (xy 128.27 173.99) (xy 133.35 173.99))
     (stroke (width 0) (type default))
     (uuid ba158f66-40d6-4d89-9ef9-029249af3882)
   )
   (wire (pts (xy 20.32 181.61) (xy 17.78 181.61))
     (stroke (width 0) (type default))
     (uuid bc4ae6da-d0e6-4a56-95d1-f5bfa2a0d191)
-  )
-  (wire (pts (xy 147.32 173.99) (xy 149.86 173.99))
-    (stroke (width 0) (type default))
-    (uuid c37cc5f1-edfb-46d8-9291-4b99e101310f)
   )
   (wire (pts (xy 57.15 186.69) (xy 52.07 186.69))
     (stroke (width 0) (type default))
@@ -1149,7 +1149,7 @@
   (symbol (lib_id "power:GND") (at 130.81 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0b11d674-a02b-48b3-a31d-da6adb551858)
-    (property "Reference" "#PWR018" (at 130.81 60.96 0)
+    (property "Reference" "#PWR07" (at 130.81 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 130.81 59.69 0)
@@ -1165,7 +1165,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1174,7 +1174,7 @@
   (symbol (lib_id "Device:C") (at 60.96 186.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 11204374-ef33-4f4f-80dd-70821403178c)
-    (property "Reference" "C3" (at 60.96 190.5 90)
+    (property "Reference" "C6" (at 60.96 190.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 60.96 193.04 90)
@@ -1194,28 +1194,28 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C3") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Regulator_Linear:AP7361C-33E") (at 139.7 173.99 0) (unit 1)
+  (symbol (lib_id "Regulator_Linear:AP7361C-33E") (at 140.97 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1242a9a6-80bf-4862-b59d-a096155ada99)
-    (property "Reference" "U2" (at 139.7 167.64 0)
+    (property "Reference" "U2" (at 140.97 167.64 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "AP7361EA" (at 139.7 170.18 0)
+    (property "Value" "AP7361EA" (at 140.97 170.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Midi-FPGA-lib:SOT-223-3R" (at 139.7 168.275 0)
+    (property "Footprint" "Midi-FPGA-lib:SOT-223-3R" (at 140.97 168.275 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361EA.pdf" (at 139.7 175.26 0)
+    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361EA.pdf" (at 140.97 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "URL" "https://www.digikey.co.uk/en/products/detail/diodes-incorporated/AP7361EA-33ER-13/16547698" (at 139.7 173.99 0)
+    (property "URL" "https://www.digikey.co.uk/en/products/detail/diodes-incorporated/AP7361EA-33ER-13/16547698" (at 140.97 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b99b8dcd-fc09-4e7f-b675-076f97ad749b))
@@ -1258,7 +1258,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 60.96 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 28906ea0-c827-4df2-835d-e2db832617e3)
-    (property "Reference" "SW1" (at 60.96 173.99 0)
+    (property "Reference" "SW2" (at 60.96 173.99 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Reset" (at 60.96 176.53 0)
@@ -1278,7 +1278,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "SW1") (unit 1)
+          (reference "SW2") (unit 1)
         )
       )
     )
@@ -1287,7 +1287,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 26.67 181.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f3a4fde-e2e0-4d6e-8b66-65698fd0fee0)
-    (property "Reference" "SW2" (at 26.67 173.99 0)
+    (property "Reference" "SW1" (at 26.67 173.99 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Boot" (at 26.67 176.53 0)
@@ -1307,28 +1307,28 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "SW2") (unit 1)
+          (reference "SW1") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 157.48 173.99 0) (unit 1)
+  (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 161.29 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 32bd2080-ad32-49d2-b09f-2f052c81c3b8)
-    (property "Reference" "JP1" (at 157.48 168.91 0)
+    (property "Reference" "JP1" (at 161.29 168.91 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "0" (at 157.48 171.45 0)
+    (property "Value" "0" (at 161.29 171.45 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 157.48 173.99 0)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 161.29 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" (at 157.48 173.99 0)
+    (property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" (at 161.29 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "URL" "https://www.digikey.co.uk/en/products/detail/stackpole-electronics-inc/RMCF0805ZT0R00/1756901" (at 157.48 173.99 0)
+    (property "URL" "https://www.digikey.co.uk/en/products/detail/stackpole-electronics-inc/RMCF0805ZT0R00/1756901" (at 161.29 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0f905a89-1c62-450d-a353-efb7e30cdfa9))
@@ -1392,26 +1392,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 139.7 184.15 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 140.97 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d96fed7-0a9c-4134-b8ff-6fead631861b)
-    (property "Reference" "#PWR08" (at 139.7 190.5 0)
+    (property "Reference" "#PWR014" (at 140.97 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 139.7 189.23 0)
+    (property "Value" "GND" (at 140.97 189.23 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 139.7 184.15 0)
+    (property "Footprint" "" (at 140.97 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 139.7 184.15 0)
+    (property "Datasheet" "" (at 140.97 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a8f2654b-212e-4a8f-a7b2-e515f41a436f))
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -1420,7 +1420,7 @@
   (symbol (lib_id "power:GND") (at 119.38 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 407302ca-cef6-4002-a0a5-3771ee2dadc1)
-    (property "Reference" "#PWR017" (at 119.38 60.96 0)
+    (property "Reference" "#PWR06" (at 119.38 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 59.69 0)
@@ -1436,32 +1436,32 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:VDD") (at 165.1 173.99 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "power:VDD") (at 168.91 173.99 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 44a8c548-806e-4c97-9033-1399fc1a0446)
-    (property "Reference" "#PWR07" (at 161.29 173.99 0)
+    (property "Reference" "#PWR011" (at 165.1 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VDD" (at 168.91 173.99 90)
+    (property "Value" "VDD" (at 168.91 171.45 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 165.1 173.99 0)
+    (property "Footprint" "" (at 168.91 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 165.1 173.99 0)
+    (property "Datasheet" "" (at 168.91 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c07e2203-6741-41ae-b2aa-1990aec343bb))
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -1499,7 +1499,7 @@
   (symbol (lib_id "Device:R") (at 80.01 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47f95fe7-76b0-4186-8475-4c8b73616350)
-    (property "Reference" "R2" (at 82.55 175.26 0)
+    (property "Reference" "R1" (at 82.55 175.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 82.55 177.8 0)
@@ -1519,7 +1519,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -1553,7 +1553,7 @@
   (symbol (lib_id "power:VCC") (at 100.33 172.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51fbfea9-f0dd-479f-81ba-cd8c17e3939a)
-    (property "Reference" "#PWR06" (at 100.33 176.53 0)
+    (property "Reference" "#PWR010" (at 100.33 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 100.33 167.64 0)
@@ -1569,7 +1569,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -1643,7 +1643,7 @@
   (symbol (lib_id "power:GND") (at 118.11 191.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 713e0d15-6325-458e-ae4e-8b5afea428df)
-    (property "Reference" "#PWR011" (at 118.11 198.12 0)
+    (property "Reference" "#PWR019" (at 118.11 198.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 194.31 0)
@@ -1659,7 +1659,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -1668,7 +1668,7 @@
   (symbol (lib_id "power:GND") (at 128.27 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 746aab29-1796-40b6-950c-22a05641f9ec)
-    (property "Reference" "#PWR09" (at 128.27 190.5 0)
+    (property "Reference" "#PWR013" (at 128.27 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 128.27 189.23 0)
@@ -1684,7 +1684,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -1718,7 +1718,7 @@
   (symbol (lib_id "power:VDD") (at 119.38 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 80ad3e3c-a3f4-4f14-869c-60079c80e0db)
-    (property "Reference" "#PWR016" (at 119.38 44.45 0)
+    (property "Reference" "#PWR05" (at 119.38 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 119.38 35.56 0)
@@ -1734,7 +1734,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -1743,7 +1743,7 @@
   (symbol (lib_id "power:GND") (at 17.78 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 86a464c3-c727-4bd8-a770-c215ee4d4058)
-    (property "Reference" "#PWR019" (at 17.78 195.58 0)
+    (property "Reference" "#PWR017" (at 17.78 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 17.78 194.31 0)
@@ -1759,7 +1759,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -1798,7 +1798,7 @@
   (symbol (lib_id "power:GND") (at 49.53 187.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5582a72-4d16-4e46-8d95-a0189ef8a73d)
-    (property "Reference" "#PWR013" (at 49.53 194.31 0)
+    (property "Reference" "#PWR016" (at 49.53 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 49.53 193.04 0)
@@ -1814,28 +1814,28 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C") (at 149.86 180.34 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 152.4 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5dff8ab-d529-4680-b4ff-ff2c36c0f4c6)
-    (property "Reference" "C2" (at 153.67 179.07 0)
+    (property "Reference" "C4" (at 156.21 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7uF" (at 153.67 181.61 0)
+    (property "Value" "4.7uF" (at 156.21 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 150.8252 184.15 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 153.3652 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71C475KE51-01.pdf" (at 149.86 180.34 0)
+    (property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71C475KE51-01.pdf" (at 152.4 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "URL" "https://www.digikey.co.uk/en/products/detail/murata-electronics/GRM21BR71C475KE51L/6606095" (at 149.86 180.34 0)
+    (property "URL" "https://www.digikey.co.uk/en/products/detail/murata-electronics/GRM21BR71C475KE51L/6606095" (at 152.4 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 03ca81cf-74a1-4fb3-a5b0-3ac2adea066e))
@@ -1843,7 +1843,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C2") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -1852,7 +1852,7 @@
   (symbol (lib_id "power:VDD") (at 80.01 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid adf9fbbe-7232-40bd-bb35-f36f4e115104)
-    (property "Reference" "#PWR014" (at 80.01 175.26 0)
+    (property "Reference" "#PWR09" (at 80.01 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 80.01 167.64 0)
@@ -1868,7 +1868,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1902,7 +1902,7 @@
   (symbol (lib_id "Device:C") (at 119.38 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b9f5a2e1-8a95-4409-8cc3-7f8e126b4f73)
-    (property "Reference" "C5" (at 123.19 48.26 0)
+    (property "Reference" "C1" (at 123.19 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22uF" (at 123.19 50.8 0)
@@ -1922,7 +1922,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C5") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -1931,7 +1931,7 @@
   (symbol (lib_id "Device:C") (at 128.27 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bdded582-686f-4384-bc5c-7fef4375c9b2)
-    (property "Reference" "C1" (at 132.08 179.07 0)
+    (property "Reference" "C3" (at 132.08 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7uF" (at 132.08 181.61 0)
@@ -1951,7 +1951,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C1") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -2010,7 +2010,7 @@
   (symbol (lib_id "Device:C") (at 26.67 186.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c6c090d1-30ea-49f7-b6b1-81c1cca594d7)
-    (property "Reference" "C7" (at 26.67 190.5 90)
+    (property "Reference" "C5" (at 26.67 190.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 26.67 193.04 90)
@@ -2030,32 +2030,32 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C7") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 149.86 184.15 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 152.4 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c7b6fe3d-1a38-4610-993b-23cf6d18b848)
-    (property "Reference" "#PWR010" (at 149.86 190.5 0)
+    (property "Reference" "#PWR015" (at 152.4 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 149.86 189.23 0)
+    (property "Value" "GND" (at 152.4 189.23 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 149.86 184.15 0)
+    (property "Footprint" "" (at 152.4 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 149.86 184.15 0)
+    (property "Datasheet" "" (at 152.4 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a1097aa2-6162-4992-a825-0a2c8064201c))
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -2064,7 +2064,7 @@
   (symbol (lib_id "Device:C") (at 80.01 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c8c5e8fe-9bcf-4626-a79e-f012fbd93aeb)
-    (property "Reference" "C4" (at 83.82 185.42 0)
+    (property "Reference" "C7" (at 83.82 185.42 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 83.82 187.96 0)
@@ -2084,7 +2084,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C4") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -2093,7 +2093,7 @@
   (symbol (lib_id "Device:R") (at 118.11 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d5f2e7ef-5e48-4794-b19a-0ec9fa533400)
-    (property "Reference" "R1" (at 120.65 176.53 0)
+    (property "Reference" "R2" (at 120.65 176.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "150" (at 120.65 179.07 0)
@@ -2113,7 +2113,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -2147,7 +2147,7 @@
   (symbol (lib_id "Device:C") (at 130.81 49.53 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eccaef83-ba38-4453-a5c0-30f9164cba6e)
-    (property "Reference" "C6" (at 135.89 48.26 0)
+    (property "Reference" "C2" (at 135.89 48.26 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 135.89 50.8 0)
@@ -2167,7 +2167,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "C6") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -2176,7 +2176,7 @@
   (symbol (lib_id "power:GND") (at 139.7 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc6fbfe2-278f-4d4f-95d4-b98037882787)
-    (property "Reference" "#PWR05" (at 139.7 140.97 0)
+    (property "Reference" "#PWR08" (at 139.7 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 139.7 0)
@@ -2192,7 +2192,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2201,7 +2201,7 @@
   (symbol (lib_id "power:GND") (at 80.01 191.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fea123bd-5217-4866-ab26-6de49ba451e5)
-    (property "Reference" "#PWR015" (at 80.01 198.12 0)
+    (property "Reference" "#PWR018" (at 80.01 198.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 193.04 0)
@@ -2217,7 +2217,7 @@
     (instances
       (project "Midi-FPGA-PCB"
         (path "/75ad38e9-b0d3-45bc-bcac-026c9800f4ea"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
